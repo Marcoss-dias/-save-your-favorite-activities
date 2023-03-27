@@ -1,0 +1,273 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.main{
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    max-width: 50vw;
+    margin: 50px auto;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.mainTitle{
+    margin: 24px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: left;
+    gap: 24px;
+}
+
+.priceInput{
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    text-align: center;
+    max-width: 200px;
+    border-radius: 6px;
+}
+
+.priceButton{
+    display: block;
+    background-color: rgb(204, 251, 185);
+    color: rgb(97, 149, 18);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.8em;
+    border: 2px solid rgb(112, 161, 38);
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.priceButton:hover{
+    cursor: pointer;
+}
+.priceButton:active{    
+    box-shadow:inset 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.datePhrase{
+    display: block;
+    padding: 12px;
+    font-size: 1.6em;
+    align-items: center;
+}
+
+.inputDate{
+    font-size: 1em;
+    padding: 6px;
+}
+
+hr{
+    margin-bottom: 15px;
+    color: rgba(128, 128, 128, 0);
+    max-width: 570px;
+}
+
+.finalResults{
+    margin-top: 12px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.finalResults > div{
+    background-color: rgb(95, 132, 221);
+    max-height: 120px;
+    margin-top: 50px;
+    min-width: 210px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.614);
+}
+
+.finalResults > div > p{
+    padding: 6px;
+}
+
+.finalResults > div> h2{
+    font-size: 3em;
+}
+
+#result{
+    margin-top: 48px;
+}
+
+#dateAlert{
+    text-align: center;
+    margin: 24px;
+}
+
+.dateAlertWarning{
+    border: 4px solid rgb(149, 0, 0);padding: 24px;
+    font-size: 2.5em;
+    color: red;
+    text-shadow: 1px 1px black;
+    max-width: 280px;
+    border-radius: 24px;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.dateAlertSafe{
+    border: 4px solid rgb(0, 149, 37);padding: 24px;
+    font-size: 2.5em;
+    color: rgb(19, 184, 44);
+    text-shadow: 1px 1px black;
+    max-width: 280px;
+    border-radius: 24px;
+    margin: auto;
+    background-color: rgba(47, 255, 78, 0.2);
+}
+
+.red{
+    color: rgb(255, 34, 34);
+}
+
+.dateAndHowMuchVeicles{
+    display: flex;
+}
+
+.dateDiv{
+    width: 65%;
+}
+
+.howMuchVeicles{
+    border: 1px dashed gray;
+    width: 35%;
+    padding: 24px;
+}
+
+.howMuchVeicles> h1{
+    font-size: 1.4rem;
+    margin: auto;
+}
+
+.howMuchVeicles> input{
+    height: 120px;
+    margin: auto;
+    font-size: 4em;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    border: none;
+    font-weight: bold;
+}
+
+.total{
+    position: absolute;
+    background-color: rgb(95, 132, 221);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 16px 64px;
+    border-radius: 24px;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.total > h3{
+    margin-left: 24px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.total > h1{
+    margin: 12px;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.easterEggHidden{
+    position: absolute;
+    border: 20px solid rgb(255, 246, 232);;
+    box-shadow: 10px 10px 30px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 246, 232);
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s;
+}   
+
+.easterEgg > h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.easterEgg{
+    position: absolute;
+    border: 20px solid rgb(255, 246, 232);;
+    box-shadow: 10px 10px 30px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 246, 232);
+    transition: 3s;
+}  
+.easterEggButton{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(249, 223, 190);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}

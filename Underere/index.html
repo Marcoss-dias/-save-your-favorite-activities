@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Subtração de Data</title>
+</head>
+
+<body>
+    <div class="total">
+        <h3>Mensal:</h3>
+        <h1 id="mounth"> -- </h1>
+        <h3 id="or">Ou --</h3>
+    </div>
+
+    <div id="easterEgg" class="easterEggHidden">
+        <h1>TIME CADASTRO</h1>
+        <img src="./UtraSecreto/timedocadastro2023.png">
+    </div>
+    <div class="easterEggButton" onmouseenter="showEE()" onmouseleave="hideEE()">
+
+    </div>
+
+    <main class="main">
+
+
+        <h1 class="mainTitle" >Valor da mensalidade: <input title="Clique para alterar" class="priceInput" type="number" value="59.90" id="mensalValue" onchange="substractDates()"
+                tabindex="1">   
+
+            <button class="priceButton" onclick="changeMensalValue(54.90), substractDates()">
+                R$54,90
+            </button>
+            <button class="priceButton" onclick="changeMensalValue(49.90), substractDates()">
+                R$49,90
+            </button>
+
+        </h1>
+        <br>
+        <div class="dateAndHowMuchVeicles">
+        <div class="dateDiv">
+            <p class="datePhrase">Data do início do contrato: <input class="inputDate" type="date" id="initialDate" onchange="substractDates()" tabindex="2"></p>
+            <br>
+            <hr>
+            <p class=" datePhrase">Data da primeira cobrança: <input class="inputDate" type="date" id="finalDate" onchange="substractDates()" tabindex="3"> </p>
+            <br>
+        </div>
+        <label class='howMuchVeicles'>
+            <h1>Quantidade de veículos:</h1>
+            <input type="number" value="1" id="howMuchVeicles" onchange="substractDates()">
+        </label >
+        </div>
+            <h2 id="result">Dados finais:</h2>
+        <div class="finalResults">
+            <div>
+                <p>Restam</p>
+                <h2 id="time"> -- </h2>
+                <p>até aprimeira</p>
+            </div>
+            <div>
+                <p><b>R$</b></p>
+                <h2 id="first"> -- </h2>
+                <p>Valor da primeira</p>
+            </div>
+            <div>
+                <p>Custo de</p>
+                <h2 id="daily"> -- </h2>
+                <p>diariamente</p>
+            </div>
+        </div>
+        <div id='dateAlert'>
+            <h1 class="" id="alertDatePlace">-- /-- / --</h1>
+        </div>
+        <script src="./script.js"></script>
+    </main>
+</body>
+
+</html>
